@@ -5,6 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcService", "CalcService\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IISHost", "IISHost\IISHost.csproj", "{3BDA1E47-7E4E-4287-B305-CC61820D29CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleClient", "ConsoleClient\ConsoleClient.csproj", "{ADD8C201-AB8C-4218-8C08-6E767C95178F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleHost", "ConsoleHost\ConsoleHost.csproj", "{AD2DCECA-1FDC-4463-93E9-75B931B690B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +23,14 @@ Global
 		{3BDA1E47-7E4E-4287-B305-CC61820D29CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BDA1E47-7E4E-4287-B305-CC61820D29CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BDA1E47-7E4E-4287-B305-CC61820D29CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADD8C201-AB8C-4218-8C08-6E767C95178F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADD8C201-AB8C-4218-8C08-6E767C95178F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADD8C201-AB8C-4218-8C08-6E767C95178F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADD8C201-AB8C-4218-8C08-6E767C95178F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD2DCECA-1FDC-4463-93E9-75B931B690B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD2DCECA-1FDC-4463-93E9-75B931B690B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD2DCECA-1FDC-4463-93E9-75B931B690B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD2DCECA-1FDC-4463-93E9-75B931B690B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
