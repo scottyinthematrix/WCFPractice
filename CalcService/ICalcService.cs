@@ -12,7 +12,7 @@ namespace ScottyApps.WCFPractice.CalcService
     public interface ICalcService
     {
         [OperationContract]
-        Complex Add(Complex x, Complex y);
+        string Add(ref Complex x, ref Complex y, out Complex rsl);
 
         [OperationContract]
         Complex Subtract(Complex x, Complex y);

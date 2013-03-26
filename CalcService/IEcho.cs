@@ -6,7 +6,7 @@ using System.Text;
 
 namespace ScottyApps.WCFPractice.CalcService
 {
-    [ServiceContract]
+    [ServiceContract(SessionMode = SessionMode.Required, CallbackContract = typeof(ICalculatorDuplexCallback))]
     interface IEcho
     {
         [OperationContract]

@@ -11,9 +11,10 @@ namespace ScottyApps.WCFPractice.CalcService
     public class CalcService : ICalcService, IEcho
     {
         #region calculation operations
-        public Complex Add(Complex x, Complex y)
+        public string Add(ref Complex x, ref Complex y, out Complex rsl)
         {
-            return new Complex(x.Real + y.Real, x.Imaginary + y.Imaginary);
+            rsl = new Complex(x.Real + y.Real, x.Imaginary + y.Imaginary);
+            return rsl.ToString();
         }
 
         public Complex Subtract(Complex x, Complex y)
@@ -48,8 +49,18 @@ namespace ScottyApps.WCFPractice.CalcService
             Thread.Sleep(10000);
             Console.WriteLine("back from sleeping: {0}", DateTime.Now);
             Console.WriteLine("the guy {0} just said hello.", name);
+            Console.WriteLine("let's see what would the client do now.");
+            Callback.PrintResult("server is done.");
         }
 
         #endregion
+
+        ICalculatorDuplexCallback Callback
+        {
+            get
+            {
+                return OperationContext.Current.GetCallbackChannel<ICalculatorDuplexCallback>();
+            }
+        }
     }
 }

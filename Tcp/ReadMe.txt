@@ -1,0 +1,1 @@
+﻿Service仅仅暴露了一个Tcp类型的终结点，但是我们仍可以将其部署到IIS上以测试其是否运行正常，不要忘记了修改站点的Enabled Protocols：往其中添加net.tcp；
